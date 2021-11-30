@@ -53,7 +53,10 @@ header {
         }
 
 nav {
-    background: #f3f0f0;
+    /* background: #f3f0f0; */
+    background-image: -webkit-radial-gradient(50% 52%, ellipse cover, #ffffff 38%, #1190cb 100%);
+    background-image:    -moz-radial-gradient(50% 52%, ellipse cover, #ffffff 38%, #1190cb 100%);
+    background-image:     -ms-radial-gradient(50% 52%, ellipse cover, #ffffff 38%, #1190cb 100%);
     margin-top: 33px;
     }
 
