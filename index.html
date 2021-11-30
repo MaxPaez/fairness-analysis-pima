@@ -1,24 +1,193 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="multimedia/imagenes/Logo CSC.jpg" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Slab:wght@200;300;400;500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500&display=swap"
+        rel="stylesheet" />
+
+    <title>C.S.C Cursos Docentes</title>
 </head>
+
 <body>
     <header>
-        <h1></h1>
-        <nav></nav>
+        <div class="header">
+            <a href="#" class="head-logo">
+                <img width="100" src="multimedia/imagenes/Logo CSC.jpg" alt="Logo" class="logo" />
+                <!--LOGO-->
+            </a>
+
+            <div class="head-rigth">
+                <div class="head-ing">
+                    <a href="">Ingresar</a>
+                    <!--Inicio de sesión-->
+                    <img width="50" src="multimedia/imagenes/icono_hombre.png" alt="" />
+                    <!--Icono-->
+                </div>
+            </div>
+        </div>
+        <nav>
+            <!--Menú-->
+            <div class="boton">
+                <label for="btn-menu"> <i class="fas fa-bars"></i></label>
+            </div>
+            <input type="checkbox" id="btn-menu" />
+
+            <ul class="head-menu">
+                <li>
+                    <a href="#"> Inicio</a>
+                </li>
+
+                <li>
+                    <a href="paginas/cursos.html"> Cursos</a>
+                </li>
+
+                <li>
+                    <a href="paginas/recursos.html"> Recursos</a>
+                </li>
+
+                <li>
+                    <a href="paginas/nosotros.html"> Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="paginas/contacto.html"> Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    
-    <main>
-        <section></section>
-    </main>
+
+    <div class="container">
+        <h1>C.S.C</h1>
+
+        <h2>Cursos para Secretaría y Conducción</h2>
+
+        <section class="section1">
+            <!-- En esta sección va la presentación y fundamentación del sitio -->
+
+            <img src="multimedia/imagenes/estudiantes-viendo-conferencia.jpg" alt="" class="img_section1" />
+            <!--Imagen-->
+        </section>
+
+        <section class="section-fund">
+            <h3>De par a par</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+                facere quos reiciendis deleniti magnam mollitia voluptas facilis
+                ipsam, veniam nihil laboriosam aliquam illo nobis accusamus, a
+                ducimus, necessitatibus architecto minima? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ab, totam repellendus at magni quaerat
+                dolores sed rem culpa esse necessitatibus quo eveniet blanditiis
+                veniam corrupti error natus? Quidem, iusto aliquam!
+            </p>
+        </section>
+
+        <section class="section_cursos">
+            <h3 class="section_cursos_h3">Nuestros Cursos</h3>
+
+            <div class="contenedor-cards">
+                <article class="card_cursos">
+                    <div class="int-cards">
+                        <img class="img-ind-demo"
+                            src="multimedia/imagenes/estudiante-laptop-estudiando-curso-linea_74855-5293.jpg"
+                            alt="Curso 1" />
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+                            libero, ducimus sint, ratione voluptatem minus
+                        </p>
+
+                        <a href="paginas/cursos.html" class="boton-curso">
+                            Ir al Curso
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card_cursos">
+                    <div class="int-cards">
+                        <img class="img-ind-demo" src="multimedia/imagenes/estudiantes-viendo-conferencia.jpg"
+                            alt="Curso 2" />
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+                            libero, ducimus sint, ratione voluptatem minus
+                        </p>
+
+                        <a href="paginas/cursos.html" class="boton-curso">
+                            Ir al Curso
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card_cursos">
+                    <div class="int-cards">
+                        <img class="img-ind-demo" src="multimedia/imagenes/concepto-cursos-linea_23-2148533386.jpg"
+                            alt="Curso 3" />
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+                            libero, ducimus sint, ratione voluptatem minus
+                        </p>
+
+                        <a href="paginas/cursos.html" class="boton-curso">
+                            Ir al Curso
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card_cursos">
+                    <div class="int-cards">
+                        <img class="img-ind-demo"
+                            src="multimedia/imagenes/estudiantes-computadoras-portatiles-estudiando-gran-computadora-portatil-gorro-graduacion_335657-3284.jpg"
+                            alt="Curso 4" />
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+                            libero, ducimus sint, ratione voluptatem minus
+                        </p>
+
+                        <a href="paginas/cursos.html" class="boton-curso">
+                            Ir al Curso
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p class="copyright">
+            Copyright <a href="https://instagram.com/maxmpaez">by Max</a>
+        </p>
+
+        <div class="foot-icon">
+            <i class="fab fa-whatsapp-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-twitter-square"></i>
+        </div>
     </footer>
-    
 </body>
+
 </html>

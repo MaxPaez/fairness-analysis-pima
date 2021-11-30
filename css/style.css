@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+h1 {
+    padding-top: 160px;
+    font-family: 'Montserrat', sans-serif;
+    color:#1190cb;
+    font-size: 100px;
+    text-align: center;
+    }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color:#000;
+    font-size: 3rem;
+    text-align: center;
+    }
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color:#000;
+    font-size: 2rem;
+    text-align: center;
+    }
+
+p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    }
+
+/* Index HTML */
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 156px;
+    z-index: 10;
+    left: 0; 
+    background-color: #ffff;   
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+        }
+
+nav {
+    background: #f3f0f0;
+    margin-top: 33px;
+    }
+
+li {
+    font-weight: 500;
+    list-style: none;
+    margin: 0.5rem;
+    align-items: flex-end;
+    }
+
+.head-rigth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+
+.head-menu {
+    display: flex;
+    justify-content: center;    
+    }
+
+.head-menu a, .boton label {
+    font-family: 'Montserrat', sans-serif;
+    color:#000;
+    text-decoration: none; 
+    transition: all 500ms ease;
+    border-bottom: 4px solid transparent;
+    }
+
+.head-menu a:hover {
+    color: #1190cb;
+    border-bottom: 3px solid #1190cb;
+    }
+
+.boton, #btn-menu {
+    display: none;
+    }
+
+/* Menú responsive */
+.head-ing {
+    display: flex;
+    margin: auto 0 10px;
+    }
+
+.head-ing a {
+    font-family: 'Montserrat', sans-serif;
+    color:#000;
+    text-decoration: none;   
+    margin: auto 10px;    
+    }   
+
+.logo {
+    display: inline-block;
+    }
+
+/* Cuerpo de la página */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    }
+
+.section1 {
+    padding: 30px 0 30px;
+    }
+
+.img_section1 { 
+    display: block;
+    margin: auto;  
+    width: 70%;       
+    }
+
+.section-fund {
+    max-width: 60%;
+    margin: 0 auto;        
+    }
+
+.section-fund h3 {
+    padding-bottom: 20px;
+    }
+
+.section_cursos {
+    margin-top: 50px;
+
+    }
+
+.section_cursos_h3 {
+    margin-bottom: 35px; 
+    }
+
+.contenedor-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    }
+
+.card_cursos {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;    
+    padding: 10px;
+    margin-top: 50px;   
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #ebebeb;        
+    color: #4546ec;
+    font-size:20px;    
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    -webkit-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    -moz-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    }
+
+.img-ind-demo {
+    height: auto;
+    width: auto;
+    max-height: 150px;
+    max-width: 200px;
+    }
+
+.int-cards {        
+    text-align: center;        
+    }
+
+.boton-curso {
+    text-decoration: none;
+    color: #FE7A6E;        
+    }
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    background-color: #1190cb;
+    }
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    font-size: 20px;
+    margin: 20px 20px 20px;                          
+    }
+
+.copyright a {
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    font-size: 20px;
+    text-decoration: none;
+    }
+
+.foot-icon {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 30px;
+    color: #fff;
+    }
+
+/* cursos HTML */
+.crs-card-cont {
+    display: grid;
+    grid-template-areas: 
+        "top top"
+        "medio medio"
+        "base base";
+    }
+
+.full-curse {
+    grid-area: top;
+    }
+
+.med-curse {
+    grid-area: medio medio;
+    }
+
+.base-curse {
+    grid-area: base base;
+    }
+
+.crs-card {
+    margin: 30px auto;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #ebebeb;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    -webkit-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    -moz-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    margin: 30 auto;                
+    }
+
+.crs-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    }
+
+.crs-card-text p {
+    padding-top: 20px;
+    }
+
+.crs-card-boton {        
+    padding-top: 40px;
+    margin-bottom: 20px;
+    }
+
+.crs-card-boton a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #1190cb;
+    padding: 0 30px;
+    }
+
+.container h2, .us-h2, .cont-h2 {
+    margin-top: 50px;
+    }
+
+/* Recursos HTML */
+.rec-grid-cont {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-template-rows: repeat(4, 1fr);    
+    gap: 20px;    
+    }
+
+.rec-grid-item {        
+    border: 2px solid #ebebeb;
+    border-radius: 15px;
+    font-family: 'Roboto Slab', serif;
+    }
+
+.rec-card {        
+    box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    -webkit-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    -moz-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    display: flex;
+    flex-direction: column;
+    }
+
+.rec-card img {
+    margin: auto;
+    padding-top: 10px;
+    }
+
+.rec-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    }
+
+.rec-card-text p {
+    padding: 10px 10px 20px 10px;        
+    }
+
+.rec-card-boton {        
+    margin : 10px 0;
+    text-align: center;
+
+    }
+
+.rec-card-boton a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #FE7A6E;        
+    }
+    
+/* Nosotros HTML */
+.us-sect, .cont-section  {
+    display: flex;
+    margin-top: 50px;
+    }
+
+.us-text, .us-img {
+    margin: auto 0;
+    }
+
+/* contacto HTML */
+.cont-mod {
+    margin: 0 auto ;
+    }
+
+.cont-section {
+    display: flex;
+    flex-direction: row;    
+    }
+
+.cont-text {
+    font-size: 20px;
+    margin: auto 0;
+    max-width: 50rem;
+    }
+
+.cont-img {
+    margin: auto 0;
+    max-height: 300px;
+    }
+
+.cont-fomr {
+    display: inline-block;
+    padding: 20px 40px 20px 20px;
+    margin-top: 50px;   
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500; 
+    }
+
+.input {
+    height: 2rem;
+    width: 20rem;
+    margin-bottom: 20px;
+    }
+
+.boton-enviar {
+    color: white;
+    size: 100px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;    
+    background-color: #4546ec;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    }
+
+/* desc-cursos HTML */
+.cur-box {
+    display: flex;
+    flex-direction: column;
+    }
+
+.cur-img {
+    margin: 80px auto 80px;
+    }
+
+.cur-cont-desc {
+    display: flex;       
+    margin: 40px auto;    
+    width: 100%;   
+    min-width: 350px; 
+    justify-content: center;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #ebebeb;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    -webkit-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    -moz-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    }
+
+.cur-desc {
+    width: 50%;
+    margin: 20px 0;
+    margin-left: 10%;
+    padding-right: 30px;   
+    }
+
+.cur-icons-cont {
+    width: 50%;
+    margin-right: 10%;
+    padding-left: 5%;
+    border-left: solid;
+    border-color: #FE7A6E;
+    }
+
+.cur-icon {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 30px;    
+    margin: 30px 0;    
+    }
+
+.cur-icon i {
+    color: #1190cb;
+    }
+
+.cur-icon p {
+    padding-left: 25px;
+    }
+
+.cur-link {
+    margin: 20px auto;
+    }
+
+.cur-link a {
+    font-family: 'Montserrat', sans-serif;
+    color: #1190cb;
+    font-size: 30px;    
+    text-decoration: none;
+    font-weight: 600;    
+    }
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+    h1 {
+        font-size: 2.5rem;
+        padding-top: 100px;
+        }
+
+    h2 {
+        font-size: 2rem;
+        }
+
+    h3 {
+        font-size: 1.5rem;
+        }
+
+    header{
+        height: 70px;
+        }
+
+    .logo {
+        height: 80%;
+        width: auto;
+        }
+
+    .head-rigth {      
+        display: none;
+        }
+
+    .head-ing {
+        height: 80%;
+        width: auto;
+        padding-bottom: 20%;
+        }
+
+    .head-menu {
+        position: absolute;
+        background: #1190cb;
+        width: 100%;
+        height: 100vh;
+        top: 70px;
+        left: -100%;
+        transition: all 500ms ease;
+        }
+
+    .head-menu a {
+        color:#ffff
+        }
+
+    #btn-menu:checked ~ ul.head-menu{
+        left:0;
+        }
+
+    .boton {
+        float: right;
+        display: block;
+        }
+    
+    #btn-menu {
+        display: none;
+        }
+
+    .boton label {
+        color: #1190cb;
+        padding: 5xp;        
+        font-size: 27px;
+        border-radius: 3px;
+        cursor: pointer;
+        position:absolute;
+        top:15px;
+        right:15px;
+        }
+
+    .head-menu {
+        display: block;      
+        }
+
+    .crs-card-cont, .rec-card-cont {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+
+    .us-sect {
+        display: flex;
+        flex-direction: column-reverse;
+        }       
+        
+    .us-img, .cont-img {
+        height: 80%;
+        }  
+
+    .cont-section {
+        display: flex;
+        flex-direction: column;
+        }
+
+    .copyright, .copyright a {
+        font-size: 14px;
+        }
+    }
