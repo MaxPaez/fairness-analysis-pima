@@ -11,6 +11,21 @@ h1 {
     text-align: center;
     }
 
+/* animación h1 */
+h1 {
+    animation-name: movimiento;
+    animation-duration: 3s;
+    position: relative;
+}
+
+@keyframes movimiento {
+    0% {
+        top: -250px;        
+    }
+
+    100% {top: 0}
+}
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     color:#000;
@@ -281,7 +296,7 @@ footer {
     padding: 0 30px;
     }
 
-.container h2, .us-h2, .cont-h2 {
+.container h2 {
     margin-top: 50px;
     }
 
