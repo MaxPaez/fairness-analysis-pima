@@ -7,11 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="multimedia/imagenes/Logo CSC.jpg" />
+    <link rel="shortcut icon" href="../multimedia/imagenes/Logo CSC.jpg" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/bootstrap.css" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="../css/style.css" />
 
@@ -26,22 +28,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500&display=swap"
         rel="stylesheet" />
 
-    <title>Nuestros Cursos</title>
+    <title>C.S.C Cursos Docentes</title>
 </head>
 
 <body>
     <header>
         <div class="header">
-            <a href="../Index.html" class="head-logo">
-                <img width="100" src="../multimedia/imagenes/Logo CSC.jpg" alt="Logo" class="logo" />
+            <a href="../index.html" class="head-logo">
+                <img width="85" src="../multimedia/imagenes/Logo CSC.jpg" alt="Logo" class="logo" />
                 <!--LOGO-->
             </a>
 
-            <div class="head-rigth">
+            <div class="head-rigth mt-3">
                 <div class="head-ing">
                     <a href="">Ingresar</a>
                     <!--Inicio de sesión-->
-                    <img width="50" src="../multimedia/imagenes/icono_hombre.png" alt="" />
+                    <img width="40" src="../multimedia/imagenes/user.png" alt="" />
                     <!--Icono-->
                 </div>
             </div>
@@ -78,115 +80,119 @@
     </header>
 
     <div class="container">
-        <h1>Nuestros Cursos</h1>
+        <h1>Nuestros Cursos y Talleres</h1>
 
         <h2>Elige el que mejor se adapte a tu necesidad</h2>
 
-        <section class="crs-card-cont">
-            <article class="crs-card full-curse">
-                <img src="../multimedia/imagenes/icono pagina.jpg" alt="" height="200" />
-
-                <div class="crs-card-text">
-                    <h3>Curso Completo</h3>
-
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-                        minima, odio expedita non eius ratione sed, ad architecto eos
-                        deserunt, a dolorum delectus ea deleniti repellat nesciunt saepe
-                        provident laboriosam!
-                    </p>
-
-                    <div class="crs-card-boton">
-                        <a href="desc-cursos.html"> Ver más</a>
-
-                        <a href="desc-cursos.html"> Inscribite</a>
+        <section class="row mt-4">
+            <!-- banner grande -->
+            <div class="col mt-2 text-center">
+                <div class="card_cursos">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso Completo</h5>
+                        <div class="text-center">
+                            <div class="text-center">
+                                <img src="../multimedia/imagenes/estudiantes-viendo-conferencia.jpg"
+                                    class="img-thumbnail" alt="img-thumbnail" />
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+                            delectus..
+                        </p>
+                        <a href="desc-cursos.html" class="card-link">Más Información</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <a href="desc-cursos.html" class="btn btn-primary">Inscribite ahora</a>
                     </div>
                 </div>
-            </article>
-
-            <article class="crs-card med-curse">
-                <img src="../multimedia/imagenes/icono pagina.jpg" alt="" height="200" />
-
-                <div class="crs-card-text">
-                    <h3>Sistema SIAL</h3>
-
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-                        minima, odio expedita non eius ratione sed, ad architecto eos
-                        deserunt, a dolorum delectus ea deleniti repellat nesciunt saepe
-                        provident laboriosam!
-                    </p>
-
-                    <div class="crs-card-boton">
-                        <a href="desc-cursos.html"> Ver más</a>
-
-                        <a href="desc-cursos.html"> Inscribite</a>
+            </div>
+            <!-- tarjetas index -->
+            <div class="row mt-4 gx-4">
+                <div class="col mt-2 text-center">
+                    <div class="p-2 border">
+                        <div class="card-body">
+                            <h5 class="card-title">SIAL</h5>
+                            <div class="text-center">
+                                <div class="text-center">
+                                    <img src="../multimedia/imagenes/concepto-cursos-linea_23-2148533386.jpg" alt=""
+                                        class="img-crd" />
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Magnam, delectus..
+                            </p>
+                            <a href="#" class="card-link">Más información</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="desc-cursos.html" class="btn btn-primary">Inscribite ahora</a>
+                        </div>
                     </div>
                 </div>
-            </article>
-
-            <article class="crs-card med-curse">
-                <img src="../multimedia/imagenes/icono pagina.jpg" alt="" height="200" />
-
-                <div class="crs-card-text">
-                    <h3>Sistemas 1</h3>
-
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-                        minima, odio expedita non eius ratione sed, ad architecto eos
-                        deserunt, a dolorum delectus ea deleniti repellat nesciunt saepe
-                        provident laboriosam!
-                    </p>
-
-                    <div class="crs-card-boton">
-                        <a href="desc-cursos.html"> Ver más</a>
-
-                        <a href="desc-cursos.html"> Inscribite</a>
+                <div class="col mt-2 text-center">
+                    <div class="p-2 border">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistemas 1</h5>
+                            <div class="text-center">
+                                <div class="text-center">
+                                    <img src="../multimedia/imagenes/estudiantes-viendo-conferencia.jpg" alt=""
+                                        class="img-crd" />
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Magnam, delectus..
+                            </p>
+                            <a href="#" class="card-link">Más información</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="desc-cursos.html" class="btn btn-primary">Inscribite ahora</a>
+                        </div>
                     </div>
                 </div>
-            </article>
-
-            <article class="crs-card base-curse">
-                <img src="../multimedia/imagenes/icono pagina.jpg" alt="" height="200" />
-
-                <div class="crs-card-text">
-                    <h3>Sistema SADE</h3>
-
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-                        minima, odio expedita non eius ratione sed, ad architecto eos
-                        deserunt, a dolorum delectus ea deleniti repellat nesciunt saepe
-                        provident laboriosam!
-                    </p>
-
-                    <div class="crs-card-boton">
-                        <a href="desc-cursos.html"> Ver más</a>
-
-                        <a href="desc-cursos.html"> Inscribite</a>
+                <div class="col mt-2 text-center">
+                    <div class="p-2 border">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema SADE</h5>
+                            <div class="text-center">
+                                <div class="text-center">
+                                    <img src="../multimedia/imagenes/img_inicio_h1.jpg" alt="" class="img-crd" />
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Magnam, delectus..
+                            </p>
+                            <a href="#" class="card-link">Más información</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="desc-cursos.html" class="btn btn-primary">Inscribite ahora</a>
+                        </div>
                     </div>
                 </div>
-            </article>
-
-            <article class="crs-card base-curse">
-                <img src="../multimedia/imagenes/icono pagina.jpg" alt="" height="200" />
-
-                <div class="crs-card-text">
-                    <h3>Sistema Mi Escuela</h3>
-
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-                        minima, odio expedita non eius ratione sed, ad architecto eos
-                        deserunt, a dolorum delectus ea deleniti repellat nesciunt saepe
-                        provident laboriosam!
-                    </p>
-
-                    <div class="crs-card-boton">
-                        <a href="desc-cursos.html"> Ver más</a>
-
-                        <a href="desc-cursos.html"> Inscribite</a>
+                <div class="col mt-2 text-center">
+                    <div class="p-2 border">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema Mi Escuela</h5>
+                            <div class="text-center">
+                                <div class="text-center">
+                                    <img src="../multimedia/imagenes/estudiante-laptop-estudiando-curso-linea_74855-5293.jpg"
+                                        alt="" class="img-crd" />
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Magnam, delectus..
+                            </p>
+                            <a href="#" class="card-link">Más información</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="desc-cursos.html" class="btn btn-primary">Inscribite ahora</a>
+                        </div>
                     </div>
                 </div>
-            </article>
+            </div>
         </section>
     </div>
 
@@ -202,6 +208,8 @@
             <i class="fab fa-twitter-square"></i>
         </div>
     </footer>
+
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
