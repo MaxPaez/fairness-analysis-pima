@@ -29,8 +29,7 @@ h1 {
   }
 }
 
-h2,
-h3 {
+h2, h3 {
   font-family: "Montserrat", sans-serif;
   color: #000;
   font-size: 3rem;
@@ -39,7 +38,7 @@ h3 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -69,7 +68,8 @@ header {
   height: 4rem;
 }
 
-nav, .btn {
+nav,
+.btn {
   background: rgb(26, 19, 140);
   background: linear-gradient(
     90deg,
@@ -79,7 +79,7 @@ nav, .btn {
 }
 
 nav {
-    margin-top: 33px;
+  margin-top: 33px;
 }
 
 li {
@@ -175,9 +175,9 @@ li {
   flex-wrap: wrap;
 }
 
-.card_cursos {
+.card_cursos,
+.desc-curs-card {
   border-radius: 15px;
-
   box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
   transition: transform 0.2s;
   text-align: center;
@@ -238,19 +238,19 @@ footer {
   color: #fff;
 }
 /* Recursos HTML */
-.rec-grid-cont {
+/* .rec-grid-cont {
   padding-top: 100px;
   display: grid;
   grid-template-columns: repeat(3, minmax(min-content, 1fr));
   grid-template-rows: repeat(4, 1fr);
   gap: 20px;
-}
+} */
 
-.rec-grid-item {
+/* .rec-grid-item {
   border: 2px solid #ebebeb;
   border-radius: 15px;
   font-family: "Roboto Slab", serif;
-}
+} */
 
 .rec-card {
   box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
@@ -260,19 +260,23 @@ footer {
   flex-direction: column;
 }
 
-.rec-card img {
+/* .rec-card img {
   margin: auto;
   padding-top: 10px;
+} */
+
+.card-text {
+    margin-top: 1rem;
 }
 
-.rec-card-text {
+/* .rec-card-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-}
+} */
 
-.rec-card-text p {
+/* .rec-card-text p {
   padding: 10px 10px 20px 10px;
 }
 
@@ -286,7 +290,7 @@ footer {
   font-size: 22px;
   font-weight: 500;
   color: #fe7a6e;
-}
+} */
 
 /* Nosotros HTML */
 .us-sect,
@@ -355,23 +359,8 @@ footer {
 }
 
 .cur-img {
-  margin: 80px auto 80px;
-}
-
-.cur-cont-desc {
-  display: flex;
-  margin: 40px auto;
-  width: 100%;
-  min-width: 350px;
-  justify-content: center;
-  border-style: solid;
-  border-radius: 15px;
-  border-width: 1px;
-  border-color: #ebebeb;
-  font-family: "Roboto Slab", serif;
-  box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
-  -webkit-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
-  -moz-box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+  margin: 50px 0;
+  text-align: center;
 }
 
 .cur-desc {
@@ -403,6 +392,7 @@ footer {
 
 .cur-icon p {
   padding-left: 25px;
+  margin-bottom: auto;
 }
 
 .cur-link {
@@ -517,5 +507,11 @@ footer {
   .copyright,
   .copyright a {
     font-size: 14px;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 465px) {
+    .cur-icons-cont {
+      border-left: none;
+    }
   }
 }
