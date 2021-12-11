@@ -2,39 +2,39 @@
 
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-        <link rel="shortcut icon" href="../multimedia/imagenes/Logo CSC.jpg" />
-    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <link rel="stylesheet" href="../css/bootstrap.css" crossorigin="anonymous">
-    
-        <link rel="stylesheet" href="../css/style.css" />
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Slab:wght@200;300;400;500&display=swap"
-            rel="stylesheet" />
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500&display=swap"
-            rel="stylesheet" />
-    
-        <title>C.S.C Cursos Docentes</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../multimedia/imagenes/Logo CSC.jpg" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/bootstrap.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Slab:wght@200;300;400;500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500&display=swap"
+        rel="stylesheet" />
+
+    <title>Contacto</title>
+</head>
 
 <body>
     <header>
         <div class="header">
-            <a href="#" class="head-logo">
+            <a href="../index.html" class="head-logo">
                 <img width="85" src="../multimedia/imagenes/Logo CSC.jpg" alt="Logo" class="logo" />
                 <!--LOGO-->
             </a>
@@ -57,7 +57,7 @@
 
             <ul class="head-menu">
                 <li>
-                    <a href="#"> Inicio</a>
+                    <a href="../index.html"> Inicio</a>
                 </li>
 
                 <li>
@@ -84,31 +84,38 @@
 
         <div class="cont-mod">
             <section class="cont-section">
-                <!--imagen-->
 
-                <img src="../multimedia/imagenes/20943953.jpg" alt="" height="500" class="cont-img" />
-                <!--form-contacto-->
-                <form class="cont-fomr">
-                    <div class="cont-form-camp">
-                        <label class="nombre" for="mensaje">Ingresa tu nombre completo:</label><br />
+                <div class="text-center">
+                    <img src="../multimedia/imagenes/20943953.jpg" alt="" class="img_section1"/>
+                </div>
 
-                        <input class="input" name="nombre" type="text" value="" size="30" />
+                <div class="desc-curs-card p-3 row">
+                    <div class="row ">
+                        <div class="form-floating mb-3 col-md-6">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Nombre completo">
+                            <label for="floatingInput" class="ms-2">Nombre completo</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-md-6">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Apellido">
+                            <label for="floatingInput" class="ms-2">Apellido</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput"
+                                placeholder="Dirección de email">
+                            <label for="floatingInput" class="ms-2">Dirección de email</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Dejanos tu consulta"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea" class="ms-2">Dejanos tu consulta</label>
+                        </div>
                     </div>
+                    <input class="btn btn-primary mb-3 col-3 ms-3" type="submit" value="Enviar" />
+                </div>
 
-                    <div class="cont-form-camp">
-                        <label class="mail" for="mensaje">Ingresa tu dirección de email:</label><br />
-
-                        <input class="input" name="mail" type="text" value="" size="" />
-                    </div>
-
-                    <div class="cont-form-camp">
-                        <label class="tit-caja" for="mensaje">Dejanos tu consulta:</label><br />
-
-                        <textarea class="input-box" name="mensaje" rows="8" cols="40"></textarea>
-                    </div>
-
-                    <input class="boton-enviar" type="submit" value="Enviar" />
-                </form>
             </section>
         </div>
     </div>
