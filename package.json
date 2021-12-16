@@ -1,0 +1,21 @@
+{
+  "name": "prueba-sass",
+  "version": "1.0.0",
+  "description": "Sitio dedicado a dar cursos para el personal docente de CABA que quiera tomar o tenga un cargo de conducción",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/style2.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxPaez/csc-cursos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxPaez/csc-cursos/issues"
+  },
+  "homepage": "https://github.com/MaxPaez/csc-cursos#readme"
+}
