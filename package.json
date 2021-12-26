@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/MaxPaez/csc-cursos/issues"
   },
-  "homepage": "https://github.com/MaxPaez/csc-cursos#readme"
+  "homepage": "https://github.com/MaxPaez/csc-cursos#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
 }
