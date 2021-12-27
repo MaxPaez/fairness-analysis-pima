@@ -93,28 +93,9 @@ p {
   flex-direction: column;
 }
 
-/* .foot-icon {
-  margin-left: auto;
-  margin-right: 20px;
-  margin-top: 15px;
-  font-size: 30px;
-  color: #fff;            
-} */
-
 .card-text {
     margin-top: 1rem;
 }
-
-/* contacto HTML */
-
-.f-btn {
-    
-}
-
-.form-floating {
-  font-family: "Montserrat", sans-serif;
-  color: #000;
-  }
 
 /* desc-cursos HTML */
 
