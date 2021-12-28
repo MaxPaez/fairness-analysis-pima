@@ -1,0 +1,55 @@
+/* Contenedor datos del curso */
+.cur-box {
+
+    /* Imagen referente al curso */
+    .cur-img {
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    /* Descripción del curso */
+    .cur-desc {
+        width: 50%;
+        margin: 20px 0;
+        margin-left: 10%;
+        padding-right: 30px;
+    }
+
+    .cur-icons-cont {
+        width: 50%;
+        margin-right: 10%;
+        padding-left: 5%;
+        border-left: solid;
+        border-color: #fe7a6e;
+
+        .cur-icon {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 30px;
+            margin: 30px 0;
+
+            i {
+                color: #1190cb;
+            }
+
+            p {
+                padding-left: 25px;
+                margin-bottom: auto;
+            }
+        }
+    }
+}
+
+.cur-link {
+    
+    margin: 20px auto;
+
+    a {
+        font-family: "Montserrat", sans-serif;
+        color: #1190cb;
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+}

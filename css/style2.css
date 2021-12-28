@@ -1,4 +1,19 @@
 @charset "UTF-8";
+p {
+  color: #242424;
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem; }
+
+h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700; }
+
+h3 {
+  font-size: 1.5rem; }
+
 .card_cursos {
   border-radius: 15px;
   box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
@@ -7,13 +22,6 @@
   .card_cursos:hover {
     transform: scale(1.02);
     box-shadow: 5px 5px 30px 0px rgba(70, 62, 62, 0.75); }
-
-header .head-menu li a {
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  text-decoration: none;
-  transition: all 500ms ease;
-  border-bottom: 4px solid transparent; }
 
 /* Header */
 header {
@@ -63,9 +71,15 @@ header {
       list-style: none;
       margin: 0.5rem;
       align-items: flex-end; }
-      header .head-menu li a:hover {
-        opacity: 0.5;
-        border-bottom: 3px solid #fff; }
+      header .head-menu li a {
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        text-decoration: none;
+        transition: all 500ms ease;
+        border-bottom: 4px solid transparent; }
+        header .head-menu li a:hover {
+          opacity: 0.5;
+          border-bottom: 3px solid #fff; }
     @media only screen and (min-width: 320px) and (max-width: 768px) {
       header .head-menu {
         display: block;
@@ -95,6 +109,45 @@ header {
     margin-top: 50px; }
     .container .section_cursos h3 {
       margin-bottom: 35px; }
+
+/* Contenedor datos del curso */
+.cur-box {
+  /* Imagen referente al curso */
+  /* Descripción del curso */ }
+  .cur-box .cur-img {
+    margin: 50px 0;
+    text-align: center; }
+  .cur-box .cur-desc {
+    width: 50%;
+    margin: 20px 0;
+    margin-left: 10%;
+    padding-right: 30px; }
+  .cur-box .cur-icons-cont {
+    width: 50%;
+    margin-right: 10%;
+    padding-left: 5%;
+    border-left: solid;
+    border-color: #fe7a6e; }
+    .cur-box .cur-icons-cont .cur-icon {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      font-size: 30px;
+      margin: 30px 0; }
+      .cur-box .cur-icons-cont .cur-icon i {
+        color: #1190cb; }
+      .cur-box .cur-icons-cont .cur-icon p {
+        padding-left: 25px;
+        margin-bottom: auto; }
+
+.cur-link {
+  margin: 20px auto; }
+  .cur-link a {
+    font-family: "Montserrat", sans-serif;
+    color: #1190cb;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600; }
 
 /* Página de contacto */
 .img_section1 {
@@ -133,7 +186,7 @@ footer {
   h1 {
     font-size: 2.5rem;
     padding-top: 100px; }
-  h2 {
+  h2, h3 {
     font-size: 2rem; }
   h3 {
     font-size: 1.5rem; }

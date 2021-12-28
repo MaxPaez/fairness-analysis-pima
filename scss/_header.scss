@@ -63,7 +63,7 @@ header {
                 align-items: flex-end;
                 
                 a {
-                    @extend %whitext;
+                    @include whitext;
                     
                     &:hover {
                         opacity: 0.5;
