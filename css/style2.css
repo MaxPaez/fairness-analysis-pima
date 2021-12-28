@@ -91,6 +91,7 @@ header {
         left: -100%;
         transition: all 500ms ease; } }
 
+/* Página de inicio */
 .container {
   max-width: 80%;
   margin: 0 auto; }
@@ -113,7 +114,8 @@ header {
 /* Contenedor datos del curso */
 .cur-box {
   /* Imagen referente al curso */
-  /* Descripción del curso */ }
+  /* Descripción del curso */
+  /* Tarjeta con iconos y decripcion de los mismos */ }
   .cur-box .cur-img {
     margin: 50px 0;
     text-align: center; }
@@ -127,7 +129,8 @@ header {
     margin-right: 10%;
     padding-left: 5%;
     border-left: solid;
-    border-color: #fe7a6e; }
+    border-color: #fe7a6e;
+    /* Iconos de la tarjeta */ }
     .cur-box .cur-icons-cont .cur-icon {
       display: flex;
       align-items: center;
@@ -140,6 +143,7 @@ header {
         padding-left: 25px;
         margin-bottom: auto; }
 
+/* Link a la suscripción */
 .cur-link {
   margin: 20px auto; }
   .cur-link a {
@@ -150,9 +154,11 @@ header {
     font-weight: 600; }
 
 /* Página de contacto */
+/* Imagen principal */
 .img_section1 {
   max-width: 85%; }
 
+/* Formulario de contacto */
 .form-floating {
   font-family: "Montserrat", sans-serif;
   color: #000; }
