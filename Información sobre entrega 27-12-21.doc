@@ -1,0 +1,3 @@
+Se agregó descripción en el HTML de todas las páginas.
+Se agregó descripción en los archivos SCSS para que se vea reflejada en el archivo de compilación style2.css.
+En el archivo config.scss se encuentran las consignas del desafío: MAP, MIXIN y EXTEND.
