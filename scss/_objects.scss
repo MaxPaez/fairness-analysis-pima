@@ -1,9 +1,6 @@
 // tarjetas
 .card_cursos {
-    border-radius: 15px;
-    box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
-    transition: transform 0.2s;
-    text-align: center;
+    @include box;
 
     &:hover {
     transform: scale(1.02);
