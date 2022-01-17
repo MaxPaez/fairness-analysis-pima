@@ -5,13 +5,56 @@ $deg-blue: linear-gradient(
     rgb(17, 144, 203) 100%
 );
 
+$fnt-mont: "Montserrat", sans-serif;
 
+
+
+// Configuración de H1
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-top: 160px;
+    font-family: $fnt-mont;
+    color: #1190cb;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* animación h1 */
+h1 {
+    animation-name: movimiento;
+    animation-duration: 3s;
+    position: relative;
+}
+
+@keyframes movimiento {
+    0% {
+    top: -250px;
+    }
+
+    100% {
+    top: 0;
+    }
+}
+
+/* propiedades tarjetas*/ 
+.img-crd,
+.img-curs {
+  max-width: 200px;
+  min-height: 133px;
+  text-align: center;
+}
 
 
 // Mixin 
 
 @mixin whitext {
-    font-family: "Montserrat", sans-serif;
+    font-family: $fnt-mont;
     color: #fff;
     text-decoration: none;
     transition: all 500ms ease;
@@ -35,7 +78,7 @@ p {
 // Extend
 
 h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: $fnt-mont;
     color: #000;
     font-size: 3rem;
     text-align: center;

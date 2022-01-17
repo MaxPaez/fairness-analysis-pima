@@ -1,4 +1,35 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  padding-top: 160px;
+  font-family: "Montserrat", sans-serif;
+  color: #1190cb;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 900; }
+
+/* animación h1 */
+h1 {
+  animation-name: movimiento;
+  animation-duration: 3s;
+  position: relative; }
+
+@keyframes movimiento {
+  0% {
+    top: -250px; }
+  100% {
+    top: 0; } }
+
+/* propiedades tarjetas*/
+.img-crd,
+.img-curs {
+  max-width: 200px;
+  min-height: 133px;
+  text-align: center; }
+
 p {
   color: #242424;
   font-family: "Roboto Slab", serif;
@@ -23,6 +54,9 @@ h3 {
     transform: scale(1.02);
     box-shadow: 5px 5px 30px 0px rgba(70, 62, 62, 0.75); }
 
+.btn {
+  background: linear-gradient(90deg, #1a138c 0%, #1190cb 100%); }
+
 /* Header */
 header {
   position: fixed;
@@ -41,6 +75,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
     height: 4rem; }
+    header .header .head-ing {
+      display: flex;
+      margin: auto 0 10px; }
+      header .header .head-ing a {
+        font-family: "Montserrat", sans-serif;
+        color: #000;
+        text-decoration: none;
+        margin: auto 10px; }
   header nav {
     margin-top: 33px;
     background: linear-gradient(90deg, #1a138c 0%, #1190cb 100%); }

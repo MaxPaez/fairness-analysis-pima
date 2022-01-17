@@ -15,8 +15,19 @@ header {
         flex-direction: row;
         justify-content: space-between;
         height: 4rem;
-        
-        a {
+            a {
+        }
+
+        .head-ing {
+            display: flex;
+            margin: auto 0 10px;
+
+            a {
+                font-family: $fnt-mont;
+                color: #000;
+                text-decoration: none;
+                margin: auto 10px;
+            }
         }
     }
 
