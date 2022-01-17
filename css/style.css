@@ -208,6 +208,9 @@ header {
   font-family: "Montserrat", sans-serif;
   color: #000; }
 
+.snd-img {
+  max-height: 500px; }
+
 /* Footer */
 footer {
   display: flex;
