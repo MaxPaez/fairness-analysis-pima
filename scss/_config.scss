@@ -45,13 +45,20 @@ h1 {
 /* propiedades tarjetas*/ 
 .img-crd,
 .img-curs {
-  max-width: 200px;
-  min-height: 133px;
-  text-align: center;
+    max-width: 200px;
+    min-height: 133px;
+    text-align: center;
 }
 
 
 // Mixin 
+@mixin box {
+    border-radius: 15px;
+    box-shadow: 5px 5px 13px 0px rgba(177, 171, 171, 0.75);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
 
 @mixin whitext {
     font-family: $fnt-mont;
